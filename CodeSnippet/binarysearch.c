@@ -1,3 +1,8 @@
+
+
+
+
+
 #include <stdio.h>
 void main(){
     int n,arr[200],start,end,mid,key;
