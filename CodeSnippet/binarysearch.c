@@ -1,4 +1,4 @@
-
+// Binary Search ek searching algorithm hai jo sorted array/list me kisi element ko efficiently dhoondhne ke liye use hota hai.
 
 
 
