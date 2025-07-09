@@ -1,6 +1,6 @@
 // Binary Search ek searching algorithm hai jo sorted array/list me kisi element ko efficiently dhoondhne ke liye use hota hai.
 
-
+//Binary Search ek aisa searching algorithm hai jo sirf sorted array ke liye kaam karta hai. Isme hum poore array ko ek-ek karke check nahi karte, balki har step pe array ka middle element check karte hain. Agar middle element hi humara desired element (key) hai, toh turant return kar dete hain. Agar key middle se chhota hai, toh hum sirf left half me search karte hain. Aur agar key bada hai, toh right half me search karte hain. Is tarah se har step pe array ka size aadha hota jata hai, isiliye Binary Search bahut fast hota hai, jiska time complexity O(log n) hota hai. Ye searching linear search se kaafi fast hoti hai, lekin condition sirf ek hai — array pehle se sorted hona chahiye. Binary search ko aap iterative ya recursive dono tarike se implement kar sakte ho.
 
 
 #include <stdio.h>
