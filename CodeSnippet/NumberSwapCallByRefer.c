@@ -1,3 +1,7 @@
+//  Call by Reference
+// Yahan original variable ka address/function ke paas jaata hai.
+
+// Agar function mein variable ko badalte ho, toh asli wala bhi badal jaata hai.
 # include <stdio.h>
 void swapNumber(int *a ,int *b);
 void main(){
