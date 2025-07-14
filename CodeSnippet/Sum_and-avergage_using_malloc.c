@@ -12,7 +12,7 @@ int main() {
 
     if (ptr == NULL) {
         printf("Memory not allocated.\n");
-        return 1;  // ✅ You missed a semicolon here
+        return 1; 
     }
 
     printf("Enter the elements:\n");
@@ -24,6 +24,6 @@ int main() {
     printf("Sum = %.2f\n", sum);
     printf("Average = %.2f\n", sum / n);
 
-    free(ptr);  // ✅ Always free allocated memory
+    free(ptr); 
     return 0;
 }
