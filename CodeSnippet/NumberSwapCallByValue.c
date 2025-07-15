@@ -1,3 +1,5 @@
+
+// In Case of Call By value. The copy of value is passed into the function formal parameter and changes inside the function with the variable won't effect the originla variable.
 # include <stdio.h>
 void swapNumber(int a ,int b);
 void main(){
