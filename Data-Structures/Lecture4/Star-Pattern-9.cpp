@@ -10,7 +10,7 @@ int main(){
 
 
     int n;
-    cout << "Enter the number: " << endl;
+    cout << "Enter the number: " ;
     cin>>n;
 
     int row=1;
@@ -20,7 +20,7 @@ int main(){
         int column=1;
         while (column<=row)
         {
-            cout << (row-column+1);
+            cout << (row-column+1) << endl;
             column++;
         }
         cout << endl;
