@@ -3,6 +3,13 @@ using namespace std;
 
 int main()
 {
+    // Pattern 12
+
+    // ABCD
+    // EFGH
+    // IJKL
+    // MNOP
+
     int n;
     cout << "Enter the number: ";
     cin >> n;
@@ -20,6 +27,5 @@ int main()
         }
         cout << endl;
         row++;
-
     }
 }
