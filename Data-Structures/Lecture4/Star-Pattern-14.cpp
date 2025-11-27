@@ -8,6 +8,8 @@ int main()
     // B B
     // C C C
 
+
+// Code Revision 
     int n;
     cout << "Enter the number: ";
     cin >> n;
