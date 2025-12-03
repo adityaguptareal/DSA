@@ -1,15 +1,28 @@
-#include<stdio.h>
-#include<math.h>
-int main(){
-    int n,c=0,b;
-    printf("Enter a decimal number : ");
-    scanf("%d",&n);
-    int a[100],i=0;
-    while(n!=0){
-        a[i++]=n%2;
-        n/=2;
-        c++;
+#include <stdio.h>
+
+int main()
+{
+    int n, i = 0;
+    int arr[32];
+    printf("Enter a decimal number: ");
+    scanf("%d", &n);
+
+    printf("Binary representation: ");
+    if (n == 0)
+    {
+        printf("0");
     }
-    for(i=0;i<c;i++) printf("%d",a[c-i-1]);
-    return 0;
+    else
+    {
+        while (n!=0)
+        {
+            arr[i] = n % 2;
+            n = n / 2;
+            i++;
+        }
+    }
+    for (int j = 0; j <n-1 ; j++)
+    {
+        printf("%d", arr[j]);
+    }
 }
