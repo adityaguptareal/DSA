@@ -3,6 +3,7 @@ using namespace std;
 
 int main()
 {
+    //revise
     // Pattern 10
     // A A A
     // B B B
