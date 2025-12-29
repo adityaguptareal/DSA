@@ -4,7 +4,13 @@ int main()
 {
 
     // Approach 2
-    //n(n+2)
+    
+    // int n;
+    // cout << "Enter the number: ";
+    // cin >> n;
+    // result=n(n+1)/2
+    // printf("%d",&result);
+
     int n;
     cout << "Enter the number: ";
     cin >> n;
