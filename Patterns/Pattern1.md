@@ -1,0 +1,38 @@
+# Pattern 1
+
+## Question
+Print the following pattern for a given number of rows `n`:
+
+```
+*
+* *
+* * *
+* * * *
+* * * * *
+```
+
+## Solution (C++)
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+```
+
+## Approach
+- Use two nested loops:
+  - Outer loop for each row (from 1 to n)
+  - Inner loop prints `i` stars for the `i`th row
+- Print a newline after each row.
+
+This is a basic left-aligned triangle pattern using nested loops.
