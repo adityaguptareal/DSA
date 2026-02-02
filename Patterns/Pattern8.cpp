@@ -1,7 +1,11 @@
 #include <iostream>
 using namespace std;
 
-// Approach 1
+// *********
+//  *******
+//   *****
+//    ***
+//     *
 void printPattern(int n)
 {
     for (int i = 1; i <= n; i++)
@@ -19,11 +23,7 @@ void printPattern(int n)
             cout << "*";
         }
 
-        // For Spaces
-        for (int l = 1; l <= i - 1; l++)
-        {
-            cout << " ";
-        }
+      
 
         cout << endl;
     }
