@@ -6,7 +6,7 @@ int countingDigit(int n)
     int count = 0;
     while (n != 0)
     {
-        int lastdigit = n % 10;
+        cout << n;
         n = n / 10;
         count++;
     }
