@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity = O(n²)
+
 void selectionSort(int arr[], int size)
 {
     for (int i = 0; i < size - 1; i++)
@@ -19,6 +21,7 @@ void selectionSort(int arr[], int size)
     }
 }
 
+
 void printArray(int arr[], int size)
 {
     cout << "Sorted Array: ";
@@ -34,6 +37,7 @@ int main()
     int size = sizeof(arr) / sizeof(arr[0]);
 
     selectionSort(arr, size);
+  
     printArray(arr, size);
 
     return 0;
