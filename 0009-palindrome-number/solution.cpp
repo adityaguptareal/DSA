@@ -1,16 +1,19 @@
 class Solution {
 public:
     bool isPalindrome(int x) {
-        if (x < 0) {
+        int numberCopy=x;
+        long reverseDigit=0;
+        if (x<0){
             return false;
         }
-        int original = x;
-        long reverseNumber = 0;
-        while (x!=0) {
-            int digit = x % 10;
-            reverseNumber = +(reverseNumber * 10) + digit;
-            x /= 10;
+        while( x!=0){
+            int lastDigit = x % 10;
+            x=x/10;
+           
+            reverseDigit=(reverseDigit*10)+lastDigit;
         }
-        return (original == reverseNumber);
+        return (reverseDigit==numberCopy);
+      
+   
     }
 };
