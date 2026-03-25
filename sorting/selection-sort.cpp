@@ -3,24 +3,39 @@ using namespace std;
 
 // Time Complexity = O(n²)
 
+// void selectionSort(int arr[], int size)
+// {
+//     for (int i = 0; i < size - 1; i++)
+//     {
+//         int index = i;
+
+//         for (int j = i + 1; j < size; j++)
+//         {
+//             if (arr[j] < arr[index])
+//             {
+//                 index = j;
+//             }
+//         }
+
+//         swap(arr[i], arr[index]);
+//     }
+// }
+
 void selectionSort(int arr[], int size)
 {
     for (int i = 0; i < size - 1; i++)
     {
-        int index = i;
-
+        int minimum = arr[0];
         for (int j = i + 1; j < size; j++)
         {
-            if (arr[j] < arr[index])
+            if (arr[j] <= minimum)
             {
-                index = j;
+                minimum = j;
             }
         }
-
-        swap(arr[i], arr[index]);
+        swap(arr[i], arr[minimum]);
     }
 }
-
 
 void printArray(int arr[], int size)
 {
@@ -37,7 +52,7 @@ int main()
     int size = sizeof(arr) / sizeof(arr[0]);
 
     selectionSort(arr, size);
-  
+
     printArray(arr, size);
 
     return 0;

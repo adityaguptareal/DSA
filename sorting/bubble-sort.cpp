@@ -7,21 +7,22 @@ using namespace std;
 
 void bubbleSort(int arr[], int size)
 {
-    for (int i = size - 1; i >= 0; i--)
+    for (int i = 0; i >= size - 1; i++)
     {
         // For optmisation
-        int swapped=0;
-        for (int j = 0; j <= i - 1; j++)
+        int swapped = 0;
+        for (int j = 0; j <= size - i - 1; j++)
         {
-            if (arr[j] > arr[j + 1]){
-                swap(arr[j],arr[j+1]);
-                swapped=1;
+            if (arr[j] > arr[j + 1])
+            {
+                swap(arr[j], arr[j + 1]);
+                swapped = 1;
             }
         }
-        if(swapped==1){
+        if (swapped == 1)
+        {
             break;
         }
-        
     }
 }
 
