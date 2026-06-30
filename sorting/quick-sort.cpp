@@ -1,20 +1,19 @@
 #include <iostream>
-#include <bits/stdc++.h>
 using namespace std;
 
 int partition(int arr[], int start, int end)
 {
+    int low=start-1;
     int pivotElement=arr[end];
-    int pos=start;
-    for (int i = start; i <= end; i++)
+    for (int i = start; i < end; i++)
     {
         if(arr[i]<=pivotElement){
-            swap(arr[i],arr[pos]);
-            pos++;
+            low++;
+            swap(arr[i],arr[low]);
         }
     }
-    return pos-1;
-    
+    swap(arr[low+1],arr[end]);
+    return low+1;
 }
 
 void quickSort(int arr[], int start, int end)
@@ -27,23 +26,16 @@ void quickSort(int arr[], int start, int end)
     quickSort(arr, start, partitionIndex - 1);
     quickSort(arr, partitionIndex + 1, end);
 }
-void printArray(int arr[], int size)
-{
-    cout << "Sorted Array: ";
-    for (int i = 0; i < size; i++)
-    {
-        cout << arr[i] << " ";
-    }
-}
 
 int main()
 {
-    int arr[5] = {4, 5, 2, 1, 3};
-    int size = sizeof(arr) / sizeof(arr[0]);
-
-    quickSort(arr, 0, size - 1);
-
-    printArray(arr, size);
+    int arr[5] = {1, 9, 2, 5, 2};
+    int end = (sizeof(arr) / sizeof(arr[0])) - 1;
+    quickSort(arr, 0, end);
+    for (int i = 0; i <= end; i++)
+    {
+        cout << arr[i];
+    }
 
     return 0;
 }
