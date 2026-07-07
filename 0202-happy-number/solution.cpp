@@ -20,7 +20,6 @@ public:
                 return false;
             }
         }
-        // fast=1;
         return true;
     }
 };
