@@ -9,7 +9,7 @@ public:
             sum += nums[i];
         }
         if (sum - nums[0] == 0) {
-            return 0;
+            return 0; 
         }
         for (int i = 1; i < nums.size(); i++) {
             left += nums[i - 1];
